@@ -5,8 +5,13 @@
     <title>Get Text Input Field Value in JavaScript</title>
     <script src="well.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
+   
     <div id="div1">
       <h2>TODAY TO DOS</h2>
       <input type="text" placeholder="Type something..." id="myInput1" />
@@ -33,14 +38,56 @@
       <br />
       <h2 id="random"></h2>
       <br />
+      <br />
+      <!-- <p>-------------------------------------------------</p>
+      <br />
+      <input type="string" placeholder="timer count" id="timer" />
+      <button type="button" onclick="timer();">ENTER</button>
+      <br />
+      <p id="mins"></p>
+      <br /> -->
     </div>
+
     <div id="div2">
       <br />
       <button type="button" onclick="getList();">
-        Get a Look at Today List
+        Get a Look at Today's List
       </button>
-      <p>-------------------------------------------------------------</p>
+      <!-- <p>-------------------------------------------------------------</p> -->
       <p id="list"></p>
+    </div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<button class="more" type="button" onclick="changeStyle()">Info About App Purpose</button>
+<button class="more-hide" type="button" onclick="changeStyleBack()">Hide</button>
+    <div id="div3">
+      <h3 class="message">
+        To any one wondering, what's different about this to do app from others
+        other than being so ugly?
+      </h3>
+      
+      <p>Disclaimer: I made this app just for myself for i needed it at that time and any experiences i encounterd or personal habits may be different from yours rendering this app useless for you</p>
+      <div id="appPurposeBox">
+      <p class="ap">
+        <strong>1</strong><br/>Well, for starters, you don't get to see your to-do list which in most
+        cases you just fill with two or three-day worth of tasks so once you see
+        it you just become unmotivated since you have much to do, and if you fill it with light tasks, surpringly, you don't finish it too so its a lose-lose situation UNLESS YOU DONT GET TO SEE IT.
+        <p class="ap"><strong>2</strong><br/>Second, looking at a list, you usually start with the first task, which at the time of work, you may be unmotivated to do it, so either you force yourself to do it, leading to usually quitting or getting distracting and well, quitting. Or, you will look down the list, and here we are again. So here, you get to randomize your task until you get one which you like.</p>
+      </p>
+      <p class="ap"><strong>3</strong><br/>Third, being given one task to work on visually, makes you focus just on it and finish it</p>
+      <p class="ap"><strong>4</strong><br/>You could visualize the problem solved here as a game, here, it's levels, you see one enemy, you kill it, you get to kill the next. You dont like that enemy, you can get another enemy, until you meet the final boss. Why would you call it the last boss if they are all equal tasks? I asked myself the same thing, and i have a rational justification. If you skipped it multiple times during random generation, it must have been a hard task, at least to your mood that day, that's why it became your last task.</p>
+  </div>
+<!-- <h3>
+  Some hiccups i crossed while doing this super simple app
+</h3>
+<ol>
+   <li>I wanted to make one textbox to get all inputs, but couldnt assign input to different variables, googled, saw a code that required a library, didnt look further and just made multiple textboxes. Now, i am wondering if i could have made it using a function </li> 
+  <li></li> 
+</ol>   -->
     </div>
   </body>
 </html>

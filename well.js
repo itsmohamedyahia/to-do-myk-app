@@ -11,6 +11,7 @@ var input1,
 var answers;
 var answersFiltered = [];
 var randomAnswer;
+var min, sec;
 
 function getInputValue() {
   // Selecting the input element and get its value
@@ -91,7 +92,7 @@ function clearText() {
 
 function getList() {
   document.getElementById("list").innerHTML =
-    "Todays List is " +
+    "<strong>Today's List is</strong> " +
     "<br />" +
     input1 +
     "<br />" +
@@ -112,4 +113,37 @@ function getList() {
     input9 +
     "<br />" +
     input10;
+}
+
+function changeStyle() {
+  var element = document.getElementById("div3");
+  element.style.display = "initial";
+}
+
+function changeStyleBack() {
+  var element = document.getElementById("div3");
+  element.style.display = "none";
+}
+
+// function timer() {
+//   min = document.getElementById("timer").value;
+//   // var timer = setInterval(function () {
+//   document.getElementById("mins").innerHTML = min + "mins remaining";
+//   min--;
+//   if (min < 0) {
+// clearInterval(timer);
+// } },
+// 1000;);}
+// min = document.getElementById("timer").value;
+
+function timer() {
+  sec = document.getElementById("timer").value;
+  sec = setInterval(function () {
+    document.getElementById("mins").innerHTML = sec;
+    sec--;
+    if (sec < 0) {
+      clearInterval(timer);
+    }
+  }, 1000);
+  // document.getElementById("mins").innerHTML = timer;
 }

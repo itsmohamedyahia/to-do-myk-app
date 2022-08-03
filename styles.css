@@ -1,22 +1,153 @@
+/* Collections */
+* {
+  /* font-family: "Roboto"; */
+  font-family: "Caveat", cursive;
+  line-height: 1.6;
+  font-size: 26px;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #679186; */
+  background-image: url("MOUNTAIN-AND-BIRDS-DESKTOP-4K.png");
+}
+
+#div1,
+#div2,
+.ap,
+.message {
+  /* background-color: #f7f5f2; */
+  /* background-color: #badbdb; */
+  /* background-color: #cbd6e4; */
+  /* background-color: #dfe6e9; */
+}
+
+/* containers */
+div {
+  text-align: center;
+  /* border: 4px solid rgba(49, 187, 175, 0.144); */
+}
+
+#div1,
+#div2 {
+  margin-top: 35px;
+  background-color: rgba(12, 9, 48, 0.068);
+  backdrop-filter: blur(5px);
+}
+#div1 {
+  width: 55%;
+
+  margin-right: 50px;
+  margin-top: 35px;
+  margin-left: 30px;
+  /* background-color: rgba(49, 63, 187, 0.144); */
+}
+#div2 {
+  width: 38%;
+  /* border-left: 0; */
+}
+
+#div3 {
+  width: 99.2%;
+  /* border-top: 0; */
+  text-align: left;
+  display: none;
+  border: none;
+  font-weight: 900;
+}
+
+#appPurposeBox {
+  border: none;
+  display: flex;
+}
+/* .blurContainers {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  opacity: 0.7;
+} */
+
+/* textboxes*/
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+} */
+
 input {
   width: 40%;
   margin-bottom: 15px;
   margin-right: 5px;
   padding-right: 5px;
+  /* border: 1px solid rgba(0, 0, 0, 0.219); */
+  border: none;
+  /* background-color: none; */
+  background-color: rgba(16, 3, 31, 0.007);
+  /* background: transparent; */
 }
 
-div {
-  text-align: center;
-  border: 4px solid black;
+/* buttons */
+button {
+  /* border: outset; */
+  cursor: pointer;
+  outline: var(--outline);
+  transition: outline-offset 200ms ease;
+  --outline: 1px solid rgba(0, 0, 0, 0.219);
+  border: 2px solid var(--clr);
+  padding: 5px;
+
+  border-radius: 15px 50px;
+  /* color: white; */
+  font-size: 22px;
+  width: 80%;
+  background: transparent;
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+  /* opacity: 0.7; */
 }
-#div1 {
-  width: 60%;
-}
-#div2 {
-  width: 40%;
-  border-left: 0;
+button {
+  margin-top: 0px;
 }
 
-body {
-  display: flex;
+button:hover {
+  outline: var(--outline);
+  outline-offset: -6px;
+  /* because of normalize */
+}
+
+.more {
+  margin-top: 100px;
+  margin-left: 90%;
+}
+.more-hide {
+  margin-top: 10px;
+  margin-left: 96%;
+}
+
+/* more info section */
+.message {
+  display: inline-block;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.ap {
+  width: 20%;
+  padding: 20px 30px;
+  margin-right: 25px;
+  /* border: 3px solid black; */
+  border-left: none;
+
+  font-size: 26px;
+  font-weight: normal;
+
+  background-color: rgba(49, 187, 175, 0.144);
+}
+.ap:first-child {
+  margin-left: 30px;
+}
+.ap:last-child {
+  /* border-left: 3px solid black; */
+  margin-right: 0;
 }
