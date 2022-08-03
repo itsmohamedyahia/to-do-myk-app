@@ -1,0 +1,22 @@
+input {
+  width: 40%;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+div {
+  text-align: center;
+  border: 4px solid black;
+}
+#div1 {
+  width: 60%;
+}
+#div2 {
+  width: 40%;
+  border-left: 0;
+}
+
+body {
+  display: flex;
+}

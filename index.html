@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Get Text Input Field Value in JavaScript</title>
+    <script src="well.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="div1">
+      <h2>TODAY TO DOS</h2>
+      <input type="text" placeholder="Type something..." id="myInput1" />
+      <input type="text" placeholder="Type something..." id="myInput2" />
+      <input type="text" placeholder="Type something..." id="myInput3" />
+      <input type="text" placeholder="Type something..." id="myInput4" />
+      <input type="text" placeholder="Type something..." id="myInput5" />
+      <input type="text" placeholder="Type something..." id="myInput6" />
+      <input type="text" placeholder="Type something..." id="myInput7" />
+      <input type="text" placeholder="Type something..." id="myInput8" />
+      <input type="text" placeholder="Type something..." id="myInput9" />
+      <input type="text" placeholder="Type something..." id="myInput10" />
+      <br />
+      <br />
+      <button type="button" onclick="getInputValue();clearText()">
+        Input Your TO-DO-s
+      </button>
+
+      <br />
+      <br />
+      <button type="button" onclick="chooseFromList();">
+        Get Random Recommendation
+      </button>
+      <br />
+      <h2 id="random"></h2>
+      <br />
+    </div>
+    <div id="div2">
+      <br />
+      <button type="button" onclick="getList();">
+        Get a Look at Today List
+      </button>
+      <p>-------------------------------------------------------------</p>
+      <p id="list"></p>
+    </div>
+  </body>
+</html>
