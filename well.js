@@ -147,3 +147,11 @@ function timer() {
   }, 1000);
   // document.getElementById("mins").innerHTML = timer;
 }
+
+// dark mode
+function dark() {
+  var element = document.body;
+  var div = document.getElementById("div1");
+  element.classList.toggle("dark-mode");
+  div.classList.toggle("dark-modeDIV");
+}

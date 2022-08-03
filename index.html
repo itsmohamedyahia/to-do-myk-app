@@ -5,34 +5,52 @@
     <title>Get Text Input Field Value in JavaScript</title>
     <script src="well.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Bebas+Neue&family=Caveat:wght@400;500;700&family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
    
     <div id="div1">
       <h2>TODAY TO DOS</h2>
       <input type="text" placeholder="Type something..." id="myInput1" />
+      <p class="btn">1</p>
+      <!-- <button type="button" class="btn">1</button> -->
       <input type="text" placeholder="Type something..." id="myInput2" />
+      <p class="btn">2</p>
+      <!-- <button type="button" class="btn">2</button> -->
       <input type="text" placeholder="Type something..." id="myInput3" />
+      <p class="btn">3</p>
+      <!-- <button type="button" class="btn">3</button> -->
       <input type="text" placeholder="Type something..." id="myInput4" />
+      <p class="btn">4</p>
+      <!-- <button type="button" class="btn">4</button> -->
       <input type="text" placeholder="Type something..." id="myInput5" />
+      <p class="btn">5</p>
+      <!-- <button type="button" class="btn">5</button> -->
       <input type="text" placeholder="Type something..." id="myInput6" />
+      <p class="btn">6</p>
+      <!-- <button type="button" class="btn">6</button> -->
       <input type="text" placeholder="Type something..." id="myInput7" />
+      <p class="btn">7</p>
+      <!-- <button type="button" class="btn">7</button> -->
       <input type="text" placeholder="Type something..." id="myInput8" />
+      <p class="btn">8</p>
+      <!-- <button type="button" class="btn">8</button> -->
       <input type="text" placeholder="Type something..." id="myInput9" />
+      <p class="btn">9</p>
+      <!-- <button type="button" class="btn">9</button> -->
       <input type="text" placeholder="Type something..." id="myInput10" />
+      <p class="btn">X</p>
+      <!-- <button type="button" class="btn">X</button> -->
       <br />
       <br />
-      <button type="button" onclick="getInputValue();clearText()">
+      <button type="button" onclick="getInputValue();clearText()" class="button-49">
         Input Your TO-DO-s
       </button>
-
-      <br />
-      <br />
-      <button type="button" onclick="chooseFromList();">
+      <p class="emptyTrash"></p>
+      <button type="button" onclick="chooseFromList();" class="button-49 paddingbutton">
         Get Random Recommendation
       </button>
       <br />
@@ -50,7 +68,7 @@
 
     <div id="div2">
       <br />
-      <button type="button" onclick="getList();">
+      <button type="button" onclick="getList();" class="button-49 paddingbutton" id="padBut" >
         Get a Look at Today's List
       </button>
       <!-- <p>-------------------------------------------------------------</p> -->
@@ -62,12 +80,12 @@
 <br/>
 <br/>
 <br/>
-<button class="more" type="button" onclick="changeStyle()">Info About App Purpose</button>
-<button class="more-hide" type="button" onclick="changeStyleBack()">Hide</button>
+<button id="more" type="button" onclick="changeStyle()" class="button-49">Info About App Purpose</button>
+<button id="more-hide" type="button" onclick="changeStyleBack()" class="button-49">Hide</button>
     <div id="div3">
       <h3 class="message">
         To any one wondering, what's different about this to do app from others
-        other than being so ugly?
+        other than being so ugly? (WAS)
       </h3>
       
       <p>Disclaimer: I made this app just for myself for i needed it at that time and any experiences i encounterd or personal habits may be different from yours rendering this app useless for you</p>
@@ -89,5 +107,8 @@
   <li></li> 
 </ol>   -->
     </div>
+    <button type="button" id="dark" onclick="dark();">🌗</button>  
   </body>
 </html>
+
+<!-- 🌞🌚 -->
