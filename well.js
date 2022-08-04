@@ -75,6 +75,82 @@ function chooseFromList() {
     answersFiltered[Math.floor(Math.random() * answersFiltered.length)];
   document.getElementById("random").innerHTML = randomAnswer;
   // alert(randomAnswer);
+  // document.getElementById("myCheck").checked = false;
+}
+
+function clearUsedItems() {
+  // var checkBox = document.getElementById("myCheck");
+  // if (checkBox.checked == true) {
+  switch (document.getElementById("random").innerHTML) {
+    case input1:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input1), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input2:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input2), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input3:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input3), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input4:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input4), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input5:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input5), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input6:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input6), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input7:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input7), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input8:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input8), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input9:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input9), 1)[0]
+      );
+      answersFiltered.pop();
+      break;
+
+    case input10:
+      answersFiltered.push(
+        answersFiltered.splice(answersFiltered.indexOf(input10), 1)[0]
+      );
+      answersFiltered.pop();
+  }
 }
 
 function clearText() {
@@ -149,9 +225,7 @@ function timer() {
 }
 
 // dark mode
-function dark() {
-  var element = document.body;
-  var div = document.getElementById("div1");
-  element.classList.toggle("dark-mode");
-  div.classList.toggle("dark-modeDIV");
-}
+// function dark() {
+//   var element = document.body;
+//   // var div2 = document.getElementById("div2");
+//   element.classList.toggle("dark-mode");}

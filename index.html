@@ -2,59 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Get Text Input Field Value in JavaScript</title>
+    <title>Tailored To Do</title>
     <script src="well.js"></script>
     <link rel="stylesheet" href="styles.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Bebas+Neue&family=Caveat:wght@400;500;700&family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Bebas+Neue&family=Caveat:wght@400;500;700&family=Roboto:wght@100;400;700;900&family=Lexend:wght@300;400&family=Caveat+Brush&family=Mohave&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="logo.png" sizes="128x128">
   </head>
   <body>
    
-    <div id="div1">
+    <div id="div1" class="lolo">
       <h2>TODAY TO DOS</h2>
+<section>
+      <article>
       <input type="text" placeholder="Type something..." id="myInput1" />
       <p class="btn">1</p>
-      <!-- <button type="button" class="btn">1</button> -->
+    </article>
+
+    <article>
       <input type="text" placeholder="Type something..." id="myInput2" />
       <p class="btn">2</p>
-      <!-- <button type="button" class="btn">2</button> -->
+    </article>
+
+    <article>
       <input type="text" placeholder="Type something..." id="myInput3" />
       <p class="btn">3</p>
-      <!-- <button type="button" class="btn">3</button> -->
+    </article>
+
+    <article>
       <input type="text" placeholder="Type something..." id="myInput4" />
       <p class="btn">4</p>
-      <!-- <button type="button" class="btn">4</button> -->
+    </article>
+
+      <article>
       <input type="text" placeholder="Type something..." id="myInput5" />
       <p class="btn">5</p>
-      <!-- <button type="button" class="btn">5</button> -->
+      </article>
+
+      <article>
       <input type="text" placeholder="Type something..." id="myInput6" />
       <p class="btn">6</p>
-      <!-- <button type="button" class="btn">6</button> -->
+      </article>
+
+      <article>
       <input type="text" placeholder="Type something..." id="myInput7" />
-      <p class="btn">7</p>
-      <!-- <button type="button" class="btn">7</button> -->
+      <p class="btn">7</p> <!-- <button type="button" class="btn">7</button> -->
+      </article>
+
+      <article>
       <input type="text" placeholder="Type something..." id="myInput8" />
       <p class="btn">8</p>
-      <!-- <button type="button" class="btn">8</button> -->
-      <input type="text" placeholder="Type something..." id="myInput9" />
+    </article>
+
+      <article>
+      <input type="text" placeholder="Type something..." id="myInput9" class="paddingTextbox9"  />
       <p class="btn">9</p>
-      <!-- <button type="button" class="btn">9</button> -->
-      <input type="text" placeholder="Type something..." id="myInput10" />
+      </article>
+      
+      <article>
+      <input type="text" placeholder="Type something..." id="myInput10" class="paddingTextbox10" />
       <p class="btn">X</p>
-      <!-- <button type="button" class="btn">X</button> -->
-      <br />
-      <br />
-      <button type="button" onclick="getInputValue();clearText()" class="button-49">
+    </article>
+  </section> 
+  <section class="buttonContainer">    
+  <button type="button" onclick="getInputValue();clearText()" class="button-49 bottomdiv1button bottomdiv1button1st">
         Input Your TO-DO-s
       </button>
-      <p class="emptyTrash"></p>
-      <button type="button" onclick="chooseFromList();" class="button-49 paddingbutton">
+      <!-- <p class="emptyTrash">00000000</p> -->
+      <button type="button" onclick="chooseFromList();" class="button-49 bottomdiv1button bottomdiv1button2nd"  id="randombutton">
         Get Random Recommendation
       </button>
+    </section>
       <br />
-      <h2 id="random"></h2>
+      <h2 id="random"></h2> 
+      <!-- <input type="checkbox" id="myCheck" onclick="clearUsedItems()"> -->
+      <button type="button" onclick="clearUsedItems();" class="button-49 donedone">DONE</button>
       <br />
       <br />
       <!-- <p>-------------------------------------------------</p>
@@ -83,22 +107,30 @@
 <button id="more" type="button" onclick="changeStyle()" class="button-49">Info About App Purpose</button>
 <button id="more-hide" type="button" onclick="changeStyleBack()" class="button-49">Hide</button>
     <div id="div3">
-      <h3 class="message">
+      <section class="button-49" id="quesContainer">
+      <h3 class="message noBold">
         To any one wondering, what's different about this to do app from others
         other than being so ugly? (WAS)
       </h3>
-      
-      <p>Disclaimer: I made this app just for myself for i needed it at that time and any experiences i encounterd or personal habits may be different from yours rendering this app useless for you</p>
+    </section>
+    <div>
+      <p class="noBold">Disclaimer:<br>I made this app just for myself for i needed it at that time and any experiences i 
+      encounterd or personal habits may be different from yours rendering this app useless for you.</p>
+    </div>
       <div id="appPurposeBox">
-      <p class="ap">
+        <p class="ap" id="p1purp">
         <strong>1</strong><br/>Well, for starters, you don't get to see your to-do list which in most
         cases you just fill with two or three-day worth of tasks so once you see
         it you just become unmotivated since you have much to do, and if you fill it with light tasks, surpringly, you don't finish it too so its a lose-lose situation UNLESS YOU DONT GET TO SEE IT.
-        <p class="ap"><strong>2</strong><br/>Second, looking at a list, you usually start with the first task, which at the time of work, you may be unmotivated to do it, so either you force yourself to do it, leading to usually quitting or getting distracting and well, quitting. Or, you will look down the list, and here we are again. So here, you get to randomize your task until you get one which you like.</p>
+        <p class="ap" id="p2purp"><strong>2</strong><br/>Second, looking at a list, you usually start with the first task, which at the time of work, you may be unmotivated to do it, so either you force yourself to do it, leading to usually quitting or getting distracting and well, quitting. Or, you will look down the list, and here we are again. So here, you get to randomize your task until you get one which you like.</p>
       </p>
-      <p class="ap"><strong>3</strong><br/>Third, being given one task to work on visually, makes you focus just on it and finish it</p>
-      <p class="ap"><strong>4</strong><br/>You could visualize the problem solved here as a game, here, it's levels, you see one enemy, you kill it, you get to kill the next. You dont like that enemy, you can get another enemy, until you meet the final boss. Why would you call it the last boss if they are all equal tasks? I asked myself the same thing, and i have a rational justification. If you skipped it multiple times during random generation, it must have been a hard task, at least to your mood that day, that's why it became your last task.</p>
+      <p class="ap" id="p3purp"><strong>3</strong><br/>Third, being given one task to work on visually, makes you focus just on it and finish it</p>
+      <p class="ap" id="p4purp" ><strong>4</strong><br/>You could visualize the problem solved here as a game, here, it's levels, you see one enemy, you kill it, you get to kill the next. You dont like that enemy, you can get another enemy, until you meet the final boss. Why would you call it the last boss if they are all equal tasks? I asked myself the same thing, and i have a rational justification. If you skipped it multiple times during random generation, it must have been a hard task, at least to your mood that day, that's why it became your last task.</p>
   </div>
+    </div>
+  <section class="white1">
+<!-- MADE BY MYK -->
+  </section>
 <!-- <h3>
   Some hiccups i crossed while doing this super simple app
 </h3>
@@ -107,7 +139,7 @@
   <li></li> 
 </ol>   -->
     </div>
-    <button type="button" id="dark" onclick="dark();">🌗</button>  
+    <button type="button" id="dark" onclick="dark();darkdiv();">🌗</button>  
   </body>
 </html>
 
